@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/themee">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sphere Calculator"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/sphereImg"
+        android:clickable="true"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="30dp"
+        android:background="@color/themee"
+        android:src="@drawable/sphere_svgrepo_com" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="10dp">
+
+        <EditText
+            android:id="@+id/radiusInput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Enter radius"
+            android:inputType="number"
+            android:textAlignment="center" />
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbCm"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="cm" />
+
+        <RadioButton
+            android:id="@+id/rbM"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="m" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Select material: " />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/spMaterials"
+            android:textColor="@color/white "
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Volume: " />
+
+        <EditText
+            android:id="@+id/volumeOutput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="Calculated Volume"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbCm3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="cm³" />
+
+        <RadioButton
+            android:id="@+id/rbM3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="m³" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Weight: " />
+
+        <EditText
+            android:id="@+id/weightOutput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="Calculated Weight"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+    <RadioGroup
+        android:id="@+id/rg3"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/G"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="g" />
+
+        <RadioButton
+            android:layout_width="60dp"
+            android:id="@+id/Kg"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="kg" />
+
+        <RadioButton
+            android:id="@+id/T"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="t" />
+
+    </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#CCCCCC" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Calculate" />
+
+    <CheckBox
+        android:id="@+id/Enable"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/font"
+        android:text="Enable editing of volume and weight" />
+</LinearLayout>
